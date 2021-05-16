@@ -1,0 +1,554 @@
+//variables//
+
+$celeste: #008fe2;
+$azul-oscuro: #2c4167;
+$beige: #efefef;
+$celeste2: #0383ce;
+$azul-oscuro2: #3e5685;
+$ancho-fuente: 2.8rem;
+$weight: 100;
+
+/*main*/
+/*principal*/
+
+.carousel-item {
+    height: 110vh;
+    .carousel__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container{
+        .carousel-caption {
+            bottom: 25rem;
+            z-index: 10;
+                .carousel__h1{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 4.0rem;
+                    color: black;
+                        .carousel__span--color{
+                            color: $celeste;
+                        }
+                    }
+                .carousel__p{
+                    color: black;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    }
+                }
+            }
+        }
+.carousel--margin{
+    margin-top: 5rem;
+}
+/*bienvenidos*/
+
+.bienvenidos{
+    text-align: left;
+    background-color: white;
+    .container{
+        .row{
+            .bienvenidos__h2{
+                padding-top: 2rem;
+                font-size: 3.6rem;
+            }
+        }
+        .row{
+            .bienvenidos__p{
+                display: flex;
+                align-items: center;
+            }
+            .bienvenidos__img{
+                padding-bottom: 2rem;
+            }
+        }
+        .row{
+            .bienvenidos__h3{
+                font-size: 2.5rem;
+                grid-area: titulo2;
+            }
+        }
+        .row{
+            .boton__bienvenidos{
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+/*especialistas*/
+
+.section__especialistas{
+    background-color: $azul-oscuro;
+    height: 100%;
+    padding-bottom: 4rem;
+    .especialistas__contenedor{
+        .row{
+            .especialistas__h2{
+                text-align: center;
+                padding: 3rem 0;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 3.6rem;
+                color: white;
+            }
+        }
+        .row{
+            .especialistas{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 2rem;
+                background-color: $celeste;
+                border: 0.3rem solid black;
+                .especialistas__img{
+                    margin: 0 auto;
+                    padding-bottom: 2rem;
+                    height: 40rem;
+                }
+                .especialistas__span{
+                    color: white;
+                    padding-left: 2rem;
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+                .especialistas__p{
+                    color: white;
+                    margin-top: 2rem;
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+}
+/*servicios*/
+
+.servicios__h2{
+    text-align: center;
+    padding: 3rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.6rem;
+}
+.servicios{
+    display: flex;
+    .servicios__img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .servicios__div{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5rem;
+        .servicios__span{
+            color: $celeste;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+        .servicios__p{
+            margin-top: 1.5rem;
+        }
+    }
+}
+.boton__servicios{
+    margin: 5rem 0;
+}
+
+/*plan*/
+.section__plan{
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    .container{
+        .row{
+            .plan__h2{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 4.6rem;
+                .plan__h2--color{
+                    color: $celeste;
+                }
+            }
+        }
+        .row{
+            .plan__p{
+                color: black;
+                margin-bottom: 2.5rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+                .plan__span--color{
+                    color: $celeste;
+                }
+            }
+        }
+    }
+}
+.section__plan--fondo{
+    background-image: url(../imagenes/fondo2.jpg);
+    background-size: cover;
+}
+/*Contacto*/
+
+/*formulario*/
+
+.section__contacto{
+    margin-left: 2rem;
+}
+.contacto__fieldset{
+    display: flex;
+    flex-direction: column;
+    legend{
+        font-size: 2.5rem;
+    }
+    label{
+        font-size: 1.6rem;
+    }
+    input{
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    }
+    select{
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    }
+    textarea{
+        height: 25rem;
+    }
+}
+.boton__limpiar, .boton__enviar{
+    background-color: $celeste;
+    color: white;
+}
+.boton__limpiar:hover, .boton__enviar:hover{
+    background-color: $celeste2;
+}
+#email{
+    margin-bottom: 0;
+}
+.check__container{
+    display: flex;
+}
+.form-text{
+    font-size: 1.1rem;
+}
+
+/*redes e informacion*/
+
+.informacion__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .redes__h3{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: $celeste;
+            font-weight: bold;
+        }
+        .redes__a{
+            text-decoration: none;
+            color: black;
+            .redes__span{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .informacion__h3{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: $celeste;
+            font-weight: bold;
+        }
+        
+        .informacion__span{
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+/*mapa*/
+
+.iframe{
+    height: 100vh;
+    width: 100%;
+}
+.ubicacion__h2{
+    text-align: center;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+
+/*especialidades.html*/
+
+
+/*portada*/
+
+.especialistas__portada{
+    height: 80vh;
+    margin-top: 5rem;
+    text-align: center;
+    .portada__img{
+        object-position: top;
+    }
+}
+
+.carousel-caption{
+    .portada__h1{
+        text-transform: uppercase;
+        font-weight: $weight*6;
+        font-size: $ancho-fuente*1.4; //tamaño de 5.6rem//
+        color: black;
+    }
+        .portada__p{
+        font-size: 2rem;
+        font-weight: $weight*7;
+    }
+}
+
+
+/*especialistas*/
+
+.section__especialidades{
+    background-color: $azul-oscuro;
+    .especialidades__h2{
+        text-align: center;
+        padding: 3rem 0;
+        text-transform: uppercase;
+        font-weight: $weight*6;
+        font-size: 3.6rem;
+        color: white;
+    }
+}
+
+.especialidades{
+    background-color: #008fe2;
+    border: 4px solid black;
+    .especialidades__div{
+        display: flex;
+        flex-direction: column;
+        .especialidades__span{
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-left: 3rem;
+        }
+        .especialidades__p{
+            color: white;
+            margin: 2rem 3rem;
+        }
+        .especialidades__span2{
+            color: white;
+            font-size: 2rem;
+            margin-left: 3rem;
+        }
+        .boton__especialidades{
+            background-color: $azul-oscuro;
+            text-align: center;
+            align-self: center;
+            margin: 1.5rem 0;
+            border-color: black;
+        }
+    }
+}
+.boton__especialidades:hover{
+    background-color: $azul-oscuro2;
+}
+
+/*nosotros.html*/
+
+.nosotros{
+    display: grid;
+    grid-template-rows: 160px 1fr 100px;
+    grid-template-columns: 1fr;
+    margin-top: 8rem;
+    text-align: center;
+    .nosotros__h1{
+        padding: 20px 0;
+        font-size: 2.8rem;
+    }
+    .nosotros__contenedor{
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+.nosotros--fondo{
+    background-color: white;
+}
+.nosotros__p{
+    text-align: left;
+    padding-bottom: 20px;
+}
+/*planes.html*/
+
+.planes__span{
+    color: $celeste;
+}
+
+.planes--fondo{
+    background-image: url(../imagenes/planesdesalud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*beneficios*/
+
+.beneficios__h2{
+    text-align: center;
+    padding: 3rem 0;
+    font-weight: 600;
+    font-size: 3.6rem;
+}
+.beneficios{
+    display: flex;
+    .beneficios__img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .beneficios__div{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5rem;
+        .beneficios__span{
+            color: $celeste;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+        .beneficios__p{
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+/*salud*/
+
+.salud__section{
+    background-color: $beige;
+    .salud__h2{
+        text-align: center;
+        font-size: 3.6rem;
+        margin: 5rem 0;
+    }
+}
+
+.salud__contenedor{
+    padding-bottom: 10rem;
+}
+.salud{
+    display: flex;
+    flex-direction: column;
+    background-color: $azul-oscuro;
+    text-align: center;
+    border-radius: 0.5em;
+    border: 3px solid black;
+    margin-left: 15px;
+    margin-right: 15px;
+    .salud__div{
+        display: flex;
+        flex-direction: column;
+    }
+    .salud__h3{
+        font-size: 2.5rem;
+        color: white;
+        margin: 2rem;
+    }
+    .salud__p{
+        color: white;
+        margin-bottom: 2rem;
+    }
+    .salud__span{
+        color: white;
+        margin-bottom: 2rem;
+        font-size: 3.6rem;
+        font-weight: bold;
+    }
+    .salud__span2{
+        color: white;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+    .boton__salud{
+        margin: 2rem 0;
+        width: fit-content;
+        align-self: center;
+        border: 2px solid black;
+    }
+    
+}
+/*turnos.html*/
+
+#turnos{
+    background-color: white;
+    .turnos__planes{
+        margin-top: 8rem;
+        .turnos{
+            text-align: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .turnos__h1{
+                font-size: 5.6rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                .planes__span{
+                    color: $celeste;
+                }
+            }
+            .turnos__p{
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.turnos--fondo{
+    background-image: url(../imagenes/planesdesalud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section__form{
+    margin-top: 5rem;
+}
+.turnos__div{
+    margin-top: 5rem;
+}
+.div__boton--tamaño{
+    width: 30rem;
+}
+.turnos__input{
+    font-size: 1.8rem;
+}
+.turnos__label{
+    font-size: 1.8rem;
+}
+.turnos__small{
+    font-size: 1.2rem;
+}
+.turnos__boton{
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+.container {
+    max-width: 114rem;
+}
+.lh-condensed { 
+    line-height: 1.25; 
+}

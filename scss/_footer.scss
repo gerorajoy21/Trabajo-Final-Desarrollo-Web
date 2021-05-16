@@ -1,0 +1,38 @@
+//variables//
+
+$celeste: #008fe2;
+$azul-oscuro: #2c4167;
+$beige: #efefef;
+$celeste2: #0383ce;
+$azul-oscuro2: #091938;
+
+/*footer*/
+
+.footer{
+    background: $azul-oscuro2;
+    color:white;
+}
+.mt-5{
+    margin-top: 0 !important;
+} 
+.footer__ul{
+    list-style-type: none;
+    .footer__li{
+        a{
+            color: white;
+            transition: color .2s;
+        }
+    }
+}
+.footer__li a:hover{
+    text-decoration:none;
+    color:$celeste;
+}
+.footer__span, .footer__h4{
+    color: $celeste;
+}
+.location p{
+    color: white;
+}
+.copyright p{border-top:1px solid rgba(255,255,255,.1);
+} 

@@ -1,0 +1,41 @@
+//variables//
+
+$celeste: #008fe2;
+$azul-oscuro: #2c4167;
+$beige: #efefef;
+$celeste2: #0383ce;
+$azul-oscuro2: #3e5685;
+
+/*header*/
+#header{
+    .navbar{
+        display: flex;
+        align-items: baseline;
+        .container-xl{
+            .header__logo{
+                .header__a{
+                    .header__img{
+                        display: inline-block;
+                        width: 16rem;
+                        height: 8rem;
+                    }
+                }
+            }
+            .navbar-collapse{
+                flex-grow: 0;
+                .navegacion__ul{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+}
+.navegacion__a{
+    color: $azul-oscuro;
+    text-decoration: none;
+}
+.navegacion__a:hover{
+    color: $celeste2;
+}

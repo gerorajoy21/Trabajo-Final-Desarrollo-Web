@@ -1,0 +1,52 @@
+//variables//
+
+$celeste: #008fe2;
+$azul-oscuro: #2c4167;
+$beige: #efefef;
+$celeste2: #0383ce;
+$azul-oscuro2: #3e5685;
+
+/*index*/
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: $beige;
+}
+p{
+    color: #6c757d;
+    font-size: 2rem;
+}
+a{
+    font-size: 1.6rem;
+}
+a:hover{
+    color: white;
+}
+.boton{
+    display: inline-block;
+    border: 0.2rem solid $azul-oscuro;
+    border-radius: 5rem;
+    background-color: #008fe2;
+    padding: 1rem 0;
+    
+    .boton__a{
+        text-decoration: none;
+        color: white;
+        padding: 1rem 2rem;
+    }
+}
+.boton:hover{
+    background-color: $celeste2;
+}
+a:hover{
+    text-decoration: none;
+}
+.container, .planes , .section__beneficios, .especialidades__contenedor, .nosotros__contenedor{
+    width: 100%;
+	max-width: 80%;
+	margin: 0 auto;
+}
+.row{
+    margin-right: 0;
+}

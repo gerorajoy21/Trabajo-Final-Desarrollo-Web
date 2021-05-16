@@ -1,0 +1,8 @@
+/*Transicion y transformacion*/
+
+.especialistas--transicion{
+    transition: 0.35s;
+}
+.especialistas--transicion:hover{
+    transform: perspective(100rem) scale(1.05);
+}
