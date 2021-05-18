@@ -1,17 +1,34 @@
 {
   "name": "scss",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina Web de un Consultorio/Centro medico en Florencio Varela",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Geronimo Rajoy Gomez",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerorajoy21/mi_repositorio.git"
+  },
+  "keywords": [
+    "Centro",
+    "Medico",
+    "Varela",
+    "Consultorio",
+    "Medicina",
+    "Hospital"
+  ],
+  "bugs": {
+    "url": "https://github.com/gerorajoy21/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/gerorajoy21/mi_repositorio#readme"
 }
