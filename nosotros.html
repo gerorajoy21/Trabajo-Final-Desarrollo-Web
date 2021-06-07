@@ -13,7 +13,7 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Centro Medico Varela - Nosotros</title>
 </head>
-<body>
+<body id="nosotros">
     <header id="header">
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white">
             <div class="container-xl">
@@ -28,33 +28,122 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navegacion__ul navbar-nav mr-auto">
                         <li class="navegacion__li1 nav-item active"><a class="navegacion__a" href="index.html">Inicio</a></li>
-                        <li class="navegacion__li2 nav-item"><a class="navegacion__a" href="especialidades.html">Especialidades</a></li>
-                        <li class="navegacion__li3 nav-item"><a class="navegacion__a" href="nosotros.html">Nosotros</a></li>
+                        <li class="navegacion__li2 nav-item"><a class="navegacion__a" href="nosotros.html">Nosotros</a></li>
+                        <li class="navegacion__li3 nav-item"><a class="navegacion__a" href="especialidades.html">Especialidades</a></li>
                         <li class="navegacion__li4 nav-item"><a class="navegacion__a" href="planes.html">Planes de Salud</a></li>
                         <li class="navegacion__li5 nav-item"><a class="navegacion__a" href="turnos.html">Pedir Turno</a></li>
                     </ul> 
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="boton--nav">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="boton__a" href="tel:11-3155-2746">11-3155-2746</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="nosotros nosotros--fondo">
-            <h1 class="nosotros__h1">Nuestra Historia</h1>
-            <div class="nosotros__contenedor">
-                <img class="nosotros__img" src="imagenes/nosotros.jpg" alt="consultorio">
-                <div class="nosotros__div">
-                    <h3 class="nosotros__h3">25 Años de Experiencia</h3>
-                    <p class="nosotros__p"> Somos un Centro Médico fundado hace más de 30 años por un grupo de profesionales apasionados por su labor, con vocación de aportar excelencia y calidad médica a la ciudad de Florencio Varela. <br>
-                        
-                        Brindamos a nuestros pacientes un servicio integral en materia de asistencia primaria para la Salud. Contamos con profesionales médicos de todas las ESPECIALIDADES. <br>
-                        
-                        Nos destacamos, y nos enorgullece, poder acercar una atención integral a las mujeres con nuestros servicios de Ginecología y Obstetricia sumado a nuestro trabajo de Ecografia. <br>
-                        
-                        Contamos con nuestro Plan de Salud "Varela Salud", a través del cual podemos ofrecer a nuestros afiliados: descuentos en farmacia del 40%, hasta el 50% en consultas y prácticas médicas, laboratorio, servicio de emergencias y médico a domicilio las 24hs y muchos beneficios más. <br>
-                        
-                        Trabajamos todos los días para aportar nuestro grano de arena en mejorar sustancialmente la calidad prestacional en materia de Salud en la localidad de Florencio Varela. Nos proponemos generar una relación cercana y humana en la prestación de todos nuestros servicios médicos y asistenciales. <br>
-                        
-                        Los esperamos en Centro Médico Varela.</p>
+        <section class="carousel-inner">
+            <div class="carousel-item active especialistas__portada">
+                <img class="carousel__img portada__img" src="imagenes/nosotrosfondo.jpg" alt="medicos mirando al frente">
+                <div class="container">
+                    <div class="carousel-caption animate__animated animate__zoomIn">
+                        <h1 class="portada__h1">Sobre Nosotros</h1>
+                        <p class="portada__p">30 años brindando <span class="carousel__span--color">el mejor servicio</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bienvenidos">
+            <div class="container">
+                <div class="row">
+                    <p class="bienvenidos__p1 col-xl-6 col-lg-8 col-md-6 col-sm-12">Somos un Centro Médico fundado hace más de 30 años por un grupo de profesionales apasionados por su labor, con vocación de aportar excelencia y calidad médica a la ciudad de Florencio Varela.
+                        Brindamos a nuestros pacientes un servicio integral en materia de asistencia primaria para la Salud. Contamos con profesionales médicos de todas las ESPECIALIDADES.
+                        Nos destacamos, y nos enorgullece, poder acercar una atención integral a las mujeres con nuestros servicios de Ginecología y Obstetricia sumado a nuestro trabajo de Ecografia.</p>
+                    <img class="bienvenidos__img bienvenidos__img--margin col-xl-6 col-lg-4 col-md-6 col-sm-12" src="imagenes/centromedico.jpg" alt="medico subiendo las escaleras">
+                </div>
+                <div class="row">
+                    <h3 class="bienvenidos__h3 col-xl-9 col-lg-8 col-md-6 col-sm-12">Nuestra Vision</h3>
+                </div>
+                <div class="row">
+                    <p class="bienvenidos__p col-xl-9 col-lg-8 col-md-6 col-sm-12">Contamos con nuestro Plan de Salud "Varela Salud", a través del cual podemos ofrecer a nuestros afiliados: descuentos en farmacia del 40%, hasta el 50% en consultas y prácticas médicas, laboratorio, servicio de emergencias y médico a domicilio las 24hs y muchos beneficios más.
+                        Trabajamos todos los días para aportar nuestro grano de arena en mejorar sustancialmente la calidad prestacional en materia de Salud en la localidad de Florencio Varela. Nos proponemos generar una relación cercana y humana en la prestación de todos nuestros servicios médicos y asistenciales.</p>
+                </div>
+            </div>
+        </section>
+        <section class="nosotros__contenedor">
+            <h2 class="mt-4 nosotros__h2">Nuestro centro medico:</h2>
+            <div class="row mb-3">
+                <div class="col-md-8 themed-grid-col">
+                    <img src="imagenes/centromedico2.jpg" alt="hall de centro medico">
+                </div>
+                <div class="col-12 col-md-4 themed-grid-col">
+                    <img src="imagenes/nosotros.jpg" alt="pasillo de centro medico">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6 col-md-4 themed-grid-col">
+                    <img src="imagenes/centromedico4.jpg" alt="medicas llevando a personas en silla de ruedas">
+                </div>
+                <div class="col-6 col-md-4 themed-grid-col">
+                    <img src="imagenes/centromedico5.jpg" alt="consultorio medico">
+                </div>
+                <div class="col-12 col-md-4 themed-grid-col">
+                    <img src="imagenes/centromedico6.jpg" alt="consultorio medico">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 themed-grid-col">
+                    <img src="imagenes/centromedico7.jpg" alt="centro medico varela">
+                </div>
+            </div>
+        </section>
+        <section class="section__opiniones section__opiniones--fondo">
+            <div class="container">
+                <div class="row">
+                    <h2 class="opiniones__h2 col-lg-12">Te prometemos <span class="opiniones__h2--color">el mejor cuidado</span></h2>
+                    <h3 class="opiniones__h3">Testimonios de nuestros clientes:</h3>
+                </div>
+                <div class="container" id="carousel__nosotros">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item carousel-item--time active">
+                                        <span class="familia__span">
+                                            "Estoy totalmente agradecida con el equipo de profesionales que tiene el Centro Medico Varela, si no hubiera sido por ellos no estaria viva, la mejor atencion de todas!"
+                                        </span>
+                                        <div class="familia__div">
+                                            <span class="familia__span2">
+                                                Rosana Garcia, salvada de un paro cardiaco.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item--time">
+                                        <span class="familia__span">
+                                            "Cuando inicie el tratamiento con la kinesiologa, crei que nunca iba a volver a jugar al futbol, sin embargo no fue asi, gracias a la doctora pude recuperarme y salir adelante en pocos meses."
+                                        </span>
+                                        <div class="familia__div">
+                                            <span class="familia__span2">
+                                                Lautaro Acosta, jugador de Defensa y Justicia.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item--time">
+                                        <span class="familia__span">
+                                            "Desde el minuto en que supe que iba a ser mama, los obstetras del Centro me acompañaron en todo el proceso de embarazo, cumpliendo con todo su trabajo hasta el dia que di a luz. Estoy muy agradecidos con ellos!"
+                                        </span>
+                                        <div class="familia__div">
+                                            <span class="familia__span2">
+                                                Laura Dau, embarazada de 35 semanas.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -64,8 +153,8 @@
             <div class="row">
                 <div class="col-lg-5 col-xs-12 about-company">
                     <h2>Centro Medico <span class="footer__span">Varela</span></h2>
-                    <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-                    <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+                    <p class="pr-5 text-white-50">El mejor y mas completo Centro Medico en Florencio Varela</p>
+                    <p><a href="https://www.instagram.com/gerorajoy21/"><i class="fa fa-instagram mr-1"></i></a><a href="https://www.linkedin.com/in/geronimo-rajoy-gomez-5b61ba200"><i class="fa fa-linkedin-square"></i></a></p>
                 </div>
                 <div class="col-lg-3 col-xs-12 links">
                     <h4 class="mt-lg-0 mt-sm-3 footer__h4">Links</h4>
@@ -75,7 +164,6 @@
                         <li class="footer__li"><a href="especialidades.html">Especialidades</a></li>
                         <li class="footer__li"><a href="planes.html">Planes de Salud</a></li>
                         <li class="footer__li"><a href="turnos.html">Pedir un Turno</a></li>
-                        <li class="footer__li"><a href="sitemap.html">Mapa de Sitio</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-xs-12 location">
@@ -95,4 +183,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a42d5bf402.js" crossorigin="anonymous"></script>
 </body>
+</html>

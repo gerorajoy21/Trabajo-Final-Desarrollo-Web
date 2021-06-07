@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Centro Medico Varela - Especialidades</title>
 </head>
 <body>
@@ -28,11 +29,17 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navegacion__ul navbar-nav mr-auto">
                         <li class="navegacion__li1 nav-item active"><a class="navegacion__a" href="index.html">Inicio</a></li>
-                        <li class="navegacion__li2 nav-item"><a class="navegacion__a" href="especialidades.html">Especialidades</a></li>
-                        <li class="navegacion__li3 nav-item"><a class="navegacion__a" href="nosotros.html">Nosotros</a></li>
+                        <li class="navegacion__li2 nav-item"><a class="navegacion__a" href="nosotros.html">Nosotros</a></li>
+                        <li class="navegacion__li3 nav-item"><a class="navegacion__a" href="especialidades.html">Especialidades</a></li>
                         <li class="navegacion__li4 nav-item"><a class="navegacion__a" href="planes.html">Planes de Salud</a></li>
                         <li class="navegacion__li5 nav-item"><a class="navegacion__a" href="turnos.html">Pedir Turno</a></li>
                     </ul> 
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="boton--nav">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="boton__a" href="tel:11-3155-2746">11-3155-2746</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -43,159 +50,288 @@
                 <img class="carousel__img portada__img" src="imagenes/especialidades.jpg" alt="doctora mirando al frente">
                 <div class="container">
                     <div class="carousel-caption animate__animated animate__zoomIn">
-                        <h1 class="portada__h1">especialidades</h1>
-                        <p class="portada__p">Forma parte de nuestra comunidad</p>
+                        <h1 class="portada__h1" id="especialidades__h1">especialidades</h1>
+                        <p class="portada__p" id="especialidades__p">Los mejores profesionales <span class="carousel__span--color">en un solo lugar</span></p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section__especialidades">
             <h2 class="especialidades__h2">Conozca a nuestros especialistas:</h2>
-            <div class="album py-5 section__especialidades">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" id="carousel-item">
+                                    <div class="album py-5 section__especialidades">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                        <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
+                                                        <div class="card-body especialidades__div">
+                                                            <span class="especialidades__span">Dr. Rajoy</span>
+                                                            <span class="especialidades__span--2">Ginecologo</span>
+                                                            <span class="especialidades__span--2">Obra Social: Ioma</span>
+                                                            <span class="especialidades__span--2">Dias: Lunes y Viernes</span>
+                                                            <span class="especialidades__span--2">Horarios: 14hs-19hs</span>
+                                                            <div class="boton boton__especialidades">
+                                                                <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                        <img class="especialidades__img" src="imagenes/gomez.jpg" alt="medica cosmetologa">
+                                                        <div class="card-body especialidades__div">
+                                                            <span class="especialidades__span">Dra. Gomez</span>
+                                                            <span class="especialidades__span--2">Cosmetologa</span>
+                                                            <span class="especialidades__span--2">Obra Social: Ioma</span>
+                                                            <span class="especialidades__span--2">Dias: Martes y Sabados</span>
+                                                            <span class="especialidades__span--2">Horarios: 8hs-19hs</span>
+                                                            <div class="boton boton__especialidades">
+                                                                <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                        <img class="especialidades__img" src="imagenes/celeste.jpg" alt="medica psicologa">
+                                                        <div class="card-body especialidades__div">
+                                                            <span class="especialidades__span">Dra. Rios</span>
+                                                            <span class="especialidades__span--2">Psicologa</span>
+                                                            <span class="especialidades__span--2">Obra Social: Ioma/Pami</span>
+                                                            <span class="especialidades__span--2">Dias: Lunes y Viernes</span>
+                                                            <span class="especialidades__span--2">Horarios: 14hs-19hs</span>
+                                                            <div class="boton boton__especialidades">
+                                                                <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="carousel-item" id="especialidades2">
+                                    <div class="album py-5 section__especialidades">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                        <img class="especialidades__img" src="imagenes/hernan.jpg" alt="medico cardiologo">
+                                                        <div class="card-body especialidades__div">
+                                                            <span class="especialidades__span">Dr. Hernan</span>
+                                                            <span class="especialidades__span--3">Cardiologo</span>
+                                                            <span class="especialidades__span--3">Obra Social: Ioma</span>
+                                                            <span class="especialidades__span--3">Dias: Miercoles y Viernes</span>
+                                                            <span class="especialidades__span--3">Horarios: 9hs-19hs</span>
+                                                            <div class="boton boton__especialidades">
+                                                                <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                        <img class="especialidades__img" src="imagenes/maria.jpg" alt="medica dermatologa">
+                                                        <div class="card-body especialidades__div">
+                                                            <span class="especialidades__span">Dra. Maria</span>
+                                                            <span class="especialidades__span--3">Dermatologa</span>
+                                                            <span class="especialidades__span--3">Obra Social: Ioma</span>
+                                                            <span class="especialidades__span--3">Dias: Martes y Jueves</span>
+                                                            <span class="especialidades__span--3">Horarios: 14hs-19hs</span>
+                                                            <div class="boton boton__especialidades">
+                                                                <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                        <img class="especialidades__img" src="imagenes/martina.jpg" alt="medica kinesiologa">
+                                                        <div class="card-body especialidades__div">
+                                                            <span class="especialidades__span">Dra. Batista</span>
+                                                            <span class="especialidades__span--3">Kinesiologa</span>
+                                                            <span class="especialidades__span--3">Obra Social: Ioma</span>
+                                                            <span class="especialidades__span--3">Dias: Sabados</span>
+                                                            <span class="especialidades__span--3">Horarios: 14hs-19hs</span>
+                                                            <div class="boton boton__especialidades">
+                                                                <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" id="especialidades3">
+                                        <div class="album py-5 section__especialidades">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                            <img class="especialidades__img" src="imagenes/lorena.jpg" alt="medica nutricionista">
+                                                            <div class="card-body especialidades__div">
+                                                                <span class="especialidades__span">Dra. Lorena</span>
+                                                                <span class="especialidades__span--3">Nutricionista</span>
+                                                                <span class="especialidades__span--3">Obra Social: Ioma</span>
+                                                                <span class="especialidades__span--3">Dias: Lunes y Martes</span>
+                                                                <span class="especialidades__span--3">Horarios: 9hs-14hs</span>
+                                                                <div class="boton boton__especialidades">
+                                                                    <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                            <img class="especialidades__img" src="imagenes/ramiro.jpg" alt="medico ecografista">
+                                                            <div class="card-body especialidades__div">
+                                                                <span class="especialidades__span">Dr. Ramiro</span>
+                                                                <span class="especialidades__span--3">Ecografista</span>
+                                                                <span class="especialidades__span--3">Obra Social: Ioma</span>
+                                                                <span class="especialidades__span--3">Dias: Lunes y Viernes</span>
+                                                                <span class="especialidades__span--3">Horarios: 14hs-19hs</span>
+                                                                <div class="boton boton__especialidades">
+                                                                    <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
+                                                            <img class="especialidades__img" src="imagenes/chino.jpg" alt="medico pediatra">
+                                                            <div class="card-body especialidades__div">
+                                                                <span class="especialidades__span">Dr. Xin</span>
+                                                                <span class="especialidades__span--3">Pediatra</span>
+                                                                <span class="especialidades__span--3">Obra Social: Ioma</span>
+                                                                <span class="especialidades__span--3">Dias: Lunes y Viernes</span>
+                                                                <span class="especialidades__span--3">Horarios: 14hs-19hs</span>
+                                                                <div class="boton boton__especialidades">
+                                                                    <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="numeros__section">
+            <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 numeros__h2">Centro Medico Varela en numeros</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+                    <div class="feature col">
+                        <div class="feature-icon">
+                            <img class="numeros__img" src="imagenes/ambulancia.png" alt="ambulancia">
+                        </div>
+                        <h2 class="numeros__span" data-aos="zoom-in">360366</h2>
+                        <p class="numeros__p">Pacientes atendidos</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon">
+                            <img class="numeros__img" src="imagenes/barbijo.png" alt="barbijo">
+                        </div>
+                        <h2 class="numeros__span" data-aos="zoom-in">45M</h2>
+                        <p class="numeros__p">Tratamientos</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon">
+                            <img class="numeros__img" src="imagenes/cruz.png" alt="cruz de emergencia">
+                        </div>
+                        <h2 class="numeros__span" data-aos="zoom-in">+30</h2>
+                        <p class="numeros__p">Años atendiendo</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon">
+                            <img class="numeros__img" src="imagenes/doctora.png" alt="icono de medica">
+                        </div>
+                        <h2 class="numeros__span" data-aos="zoom-in">49</h2>
+                        <p class="numeros__p">Profesionales</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="medicos__section">
+            <h2 class="medicos__h2">Nuestros Servicios Medicos:</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" data-aos="flip-left">
+                        <div class="especialidades card mb-4 shadow-sm">
+                            <div class="card-body especialidades__div">
+                                <img class="medicos__img" src="imagenes/cardiology.jpg" alt="medica sosteniendo un corazon">
+                                <span class="medicos__span">Cardiologia</span>
+                                <p class="medicos__p">El Servicio de Cardiología brinda diagnóstico y tratamiento para todo el espectro de enfermedades cardiovasculares. Cuenta con equipos multidisciplinarios de trabajo con amplia experiencia en cada una de las subespecialidades de la Cardiología y la tecnología más avanzada en métodos diagnósticos. La informatización de la historia clínica nos permitio mejorar la comunicación con los médicos de cabecera y los pacientes.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-md-6" data-aos="flip-left">
+                        <div class="especialidades card mb-4 shadow-sm">
+                            <div class="card-body especialidades__div">
+                                <img class="medicos__img" src="imagenes/diabetes.jpg" alt="diabetes">
+                                <span class="medicos__span">Nutricion</span>
+                                <p class="medicos__p">En el Centro Medico Varela creamos dietas personalizadas y adaptadas a las diferentes características de una persona. Además de nuestra Clínica, realizamos consultas online mediante videoconferencia y un seguimiento a través de una plataforma online. Y si necesitas atención personalizada, podes contactar con cualquiera de nuestros nutricionistas las 24hs del dia, los 7 dias de la semanas, los 365 dias del año.</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-md-6" data-aos="flip-left">
+                        <div class="especialidades card mb-4 shadow-sm">
+                            <div class="card-body especialidades__div">
+                                <img class="medicos__img" src="imagenes/prenatal.jpg" alt="mujer embarazada">
+                                <span class="medicos__span">Ginecologia y Obstetricia</span>
+                                <p class="medicos__p">El Servicio de Ginecología y Obstetricia de nuestra institución cuenta con una vasta trayectoria y con reconocidos profesionales con profunda vocación y alta capacitación. Abarcando todas las áreas de la especialidad, el Servicio brinda la más alta calidad de atención tanto en lo científico como en lo humano.
+                                    Este Servicio se encuentra conformado por un gran equipo de profesionales con formación internacional que brindan una atención especializada y ética en todas las patologías y condiciones que afectan a la mujer.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-md-6" data-aos="flip-left">
+                        <div class="especialidades card mb-4 shadow-sm">
+                            <div class="card-body especialidades__div">
+                                <img class="medicos__img" src="imagenes/pediatria.jpg" alt="bebe mirando a la camara">
+                                <span class="medicos__span">Pediatria</span>
+                                <p class="medicos__p">El Servicio de Pediatría, se inicia desde la fundación misma del Centro Medico Varela, basado en principios humanos, éticos y de alto rigor científico, en la atención del paciente pediátrico, desde su nacimiento hasta la adolescencia, teniendo en cuenta en cada niño su potencialidad de desarrollo, como individuo inserto en un ámbito familiar y social. 
+                                    Los Pediatras que fundaron este Servicio como aquellos que los sucedieron y que conforman actualmente el plantel profesional, son especialistas de alta trayectoria, experiencia y calidad.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-md-6" data-aos="flip-left">
+                        <div class="especialidades card mb-4 shadow-sm">
+                            <div class="card-body especialidades__div">
+                                <img class="medicos__img" src="imagenes/psicologia.jpg" alt="medica atendiendo a paciente">
+                                <span class="medicos__span">Psicologia</span>
+                                <p class="medicos__p">El objetivo principal de este servicio es el bienestar emocional,  personal y social del usuario, para mejorar su calidad de vida y su inclusión social, a través de la evaluación, orientación y en su caso, intervención o derivación. Este objetivo se lleva a cabo a través del trabajo con el usuario, familias, profesionales y otros agentes.</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="especialidades especialistas--transicion card mb-4 shadow-sm">
-                                <img class="especialidades__img" src="imagenes/rajoy.jpg" alt="medico ginecologo">
-                                <div class="card-body especialidades__div">
-                                    <span class="especialidades__span">Doctor Rajoy</span>
-                                    <span class="especialidades__span">Ginecologo</span>
-                                    <p class="especialidades__p">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <span class="especialidades__span2">Obra Social: Ioma</span>
-                                    <span class="especialidades__span2">Dias: Lunes y Viernes</span>
-                                    <span class="especialidades__span2">Horarios: 14hs-19hs</span>
-                                    <div class="boton boton__especialidades">
-                                        <a class="boton__a boton__especialidades__a" href="turnos.html">Pedir Turno</a>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-md-6" data-aos="flip-left">
+                        <div class="especialidades card mb-4 shadow-sm">
+                            <div class="card-body especialidades__div">
+                                <img class="medicos__img" src="imagenes/ecografia.jpg" alt="hombre haciendose chequeos">
+                                <span class="medicos__span">Ecografia</span>
+                                <p class="medicos__p">Bajo la mirada atenta de los profesionales, la mujer puede realizarse una mamografía, el médico imagenólogo especialista puede determinar la necesidad de completar el estudio con radiología localizada, magnificada o ecografía. De los estudios realizados, puede surgir la necesidad de recomendar un estudio citológico o histopatológico.</p>
                             </div>
                         </div>
                     </div>
@@ -208,8 +344,8 @@
             <div class="row">
                 <div class="col-lg-5 col-xs-12 about-company">
                     <h2>Centro Medico <span class="footer__span">Varela</span></h2>
-                    <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-                    <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+                    <p class="pr-5 text-white-50">El mejor y mas completo Centro Medico en Florencio Varela</p>
+                    <p><a href="https://www.instagram.com/gerorajoy21/"><i class="fa fa-instagram mr-1"></i></a><a href="https://www.linkedin.com/in/geronimo-rajoy-gomez-5b61ba200"><i class="fa fa-linkedin-square"></i></a></p>
                 </div>
                 <div class="col-lg-3 col-xs-12 links">
                     <h4 class="mt-lg-0 mt-sm-3 footer__h4">Links</h4>
@@ -219,7 +355,6 @@
                         <li class="footer__li"><a href="especialidades.html">Especialidades</a></li>
                         <li class="footer__li"><a href="planes.html">Planes de Salud</a></li>
                         <li class="footer__li"><a href="turnos.html">Pedir un Turno</a></li>
-                        <li class="footer__li"><a href="sitemap.html">Mapa de Sitio</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-xs-12 location">
@@ -239,5 +374,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a42d5bf402.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

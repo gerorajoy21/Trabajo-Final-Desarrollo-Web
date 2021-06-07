@@ -6,18 +6,43 @@ $beige: #efefef;
 $celeste2: #0383ce;
 $azul-oscuro2: #3e5685;
 
+//mapas//
+
+$navegacion: (
+    color: #008fe2,
+);
+
+//each//
+
+@each $nav, $color in $navegacion {
+    .navbar-toggler--#{$nav} {
+        background-color: $color;
+    }
+}
+
+/*navbar bucle*/
+
+@for $i from 1 through 5 {
+    .navegacion__li#{$i} { 
+        padding: 0.5rem 0 * $i;
+        list-style-type: none; 
+        margin: 0 2rem;
+    }
+}
+
 /*header*/
 #header{
     .navbar{
         display: flex;
         align-items: baseline;
+        box-shadow: 0 0 3px 0 gray;
         .container-xl{
             .header__logo{
                 .header__a{
                     .header__img{
                         display: inline-block;
-                        width: 16rem;
-                        height: 8rem;
+                        width: 22rem;
+                        height: 6rem;
                     }
                 }
             }
@@ -27,6 +52,23 @@ $azul-oscuro2: #3e5685;
                     display: flex;
                     align-items: center;
                     margin-right: 2rem;
+                }
+            }
+            .boton--nav{
+                border: 0.2rem solid $azul-oscuro;
+                border-radius: 5rem;
+                background-color: #008fe2;
+                padding: 0.5rem 0;
+                width: fit-content;
+                .fa-phone-alt{
+                    margin-left: 2rem;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+                .boton__a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 1rem 1rem;
                 }
             }
         }

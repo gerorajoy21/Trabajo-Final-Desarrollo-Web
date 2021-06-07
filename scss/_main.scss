@@ -5,56 +5,98 @@ $azul-oscuro: #2c4167;
 $beige: #efefef;
 $celeste2: #0383ce;
 $azul-oscuro2: #3e5685;
-$ancho-fuente: 2.8rem;
 $weight: 100;
 
-/*main*/
-/*principal*/
+//main//
+//principal//
 
-.carousel-item {
-    height: 110vh;
-    .carousel__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .container{
-        .carousel-caption {
-            bottom: 15rem;
-            z-index: 10;
-                .carousel__h1{
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    font-size: 4.0rem;
-                    color: black;
-                        .carousel__span--color{
-                            color: $celeste;
-                        }
+.carousel--margin{
+    margin-top: 5rem;
+    .carousel-inner{
+        .carousel-item--height{
+            height: 100vh;
+            .carousel__img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(80%);
+            }
+            .container{
+                .carousel-caption--1{
+                    bottom: 30rem;
+                    z-index: 10;
+                    .carousel__h1--1{
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 4.5rem;
+                        color: white;
+                            .carousel__span--color{
+                                color: $celeste;
+                            }
                     }
-                .carousel__p{
-                    color: black;
-                    font-size: 2rem;
-                    font-weight: 700;
+                    .carousel__p--1{
+                        color: white;
+                        font-size: 2rem;
+                        font-weight: 700;
                     }
                 }
             }
         }
-.carousel--margin{
-    margin-top: 5rem;
+    }
 }
-/*bienvenidos*/
+
+.carousel-caption--2{
+    bottom: 30rem;
+    z-index: 10;
+    .carousel__h1--2{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 4.5rem;
+        .carousel__span--color{
+            color: $celeste;
+        }
+    }
+    .carousel__p--2{
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+.carousel-caption--3{
+    bottom: 30rem;
+    z-index: 10;
+    .carousel__h1--3{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 4.5rem;
+        .carousel__span--color{
+            color: $celeste;
+        }
+    }
+    .carousel__p--3{
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+//bienvenidos//
 
 .bienvenidos{
     text-align: left;
     background-color: white;
+    padding-bottom: 3rem;
     .container{
         .row{
             .bienvenidos__h2{
                 padding-top: 2rem;
                 font-size: 3.6rem;
+                padding-left: 0;
             }
         }
         .row{
@@ -70,96 +112,143 @@ $weight: 100;
             .bienvenidos__h3{
                 font-size: 2.5rem;
                 grid-area: titulo2;
-            }
-        }
-        .row{
-            .boton__bienvenidos{
-                margin: 2rem 0;
+                margin-bottom: 2rem;
             }
         }
     }
+    .boton__bienvenidos{
+        margin: 0 auto;
+        margin-top: 3rem;
+        border: 0.2rem solid $azul-oscuro;
+        border-radius: 5rem;
+        background-color: #008fe2;
+        padding: 1rem 0;
+        width: fit-content;
+        .boton__bienvenidos__a{
+            text-decoration: none;
+            color: white;
+            padding: 1rem 2rem;
+        }
+    }
 }
-/*especialistas*/
+.boton__bienvenidos:hover{
+    background-color: $celeste2;
+}
+
+//especialistas//
 
 .section__especialistas{
     background-color: $azul-oscuro;
     height: 100%;
     padding-bottom: 4rem;
-    .especialistas__contenedor{
+    .especialistas__h2{
+        text-align: center;
+        padding: 3rem 0;
+        font-weight: 600;
+        font-size: 3.6rem;
+        color: white;
+    }
+    .section__especialidades{
+        .container{
+            .row{
+                .col-md-4{
+                    .especialidades{
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 2rem;
+                        background-color: $celeste;
+                        border: 0.3rem solid black;
+                        .especialidades__div{
+                            .especialistas__img{
+                                margin: 0 auto;
+                                padding-bottom: 2rem;
+                                
+                            }
+                            .especialistas__span{
+                                color: white;
+                                padding: 0 2.5rem;
+                                font-size: 2rem;
+                                font-weight: bold;
+                            }
+                            .especialistas__span2{
+                                color: white;
+                                padding-top: 1rem;
+                                padding: 0 2.5rem;
+                                font-size: 2rem;
+                            }
+                            .especialistas__p{
+                                color: white;
+                                font-size: 1.5rem;
+                                line-height: 3rem;
+                                margin-top: 1rem;
+                                padding: 0 2.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//servicios//
+
+.section__servicios{
+    .container{
         .row{
-            .especialistas__h2{
+            .servicios__h2{
                 text-align: center;
                 padding: 3rem 0;
-                text-transform: uppercase;
                 font-weight: 600;
                 font-size: 3.6rem;
-                color: white;
             }
         }
         .row{
-            .especialistas{
+            .servicios{
                 display: flex;
-                flex-direction: column;
-                padding-bottom: 2rem;
-                background-color: $celeste;
-                border: 0.3rem solid black;
-                .especialistas__img{
-                    margin: 0 auto;
-                    padding-bottom: 2rem;
-                    height: 40rem;
+                .servicios__img{
+                    width: 5rem;
+                    height: 5rem;
+                    min-width: 5rem;
                 }
-                .especialistas__span{
-                    color: white;
-                    padding-left: 2rem;
-                    font-size: 3rem;
-                    font-weight: bold;
-                }
-                .especialistas__p{
-                    color: white;
-                    margin-top: 2rem;
-                    padding-left: 2rem;
+                .servicios__div{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 2.5rem;
+                    .servicios__span{
+                        color: $celeste;
+                        font-weight: bold;
+                        font-size: 1.8em;
+                    }
+                    .servicios__p{
+                        margin-top: 1.5rem;
+                    }
                 }
             }
         }
     }
-}
-/*servicios*/
-
-.servicios__h2{
-    text-align: center;
-    padding: 3rem 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 3.6rem;
-}
-.servicios{
-    display: flex;
-    .servicios__img{
-        width: 5rem;
-        height: 5rem;
-    }
-    .servicios__div{
-        display: flex;
-        flex-direction: column;
-        margin-left: 2.5rem;
-        .servicios__span{
-            color: $celeste;
-            font-weight: bold;
-            font-size: 1.8em;
-        }
-        .servicios__p{
-            margin-top: 1.5rem;
+    .boton__servicios{
+        margin: 5rem auto;
+        border: 0.2rem solid $azul-oscuro;
+        border-radius: 5rem;
+        background-color: #008fe2;
+        padding: 1rem 0;
+        width: fit-content;
+        .boton__servicios__a{
+            text-decoration: none;
+            color: white;
+            padding: 1rem 2rem;
         }
     }
 }
-.boton__servicios{
-    margin: 5rem 0;
+.boton__servicios:hover{
+    background-color: $celeste2;
 }
 
-/*plan*/
+//plan//
+
 .section__plan{
     text-align: center;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     .container{
@@ -167,7 +256,8 @@ $weight: 100;
             .plan__h2{
                 text-transform: uppercase;
                 font-weight: 600;
-                font-size: 4.6rem;
+                font-size: 4rem;
+                color: white;
                 .plan__h2--color{
                     color: $celeste;
                 }
@@ -175,7 +265,7 @@ $weight: 100;
         }
         .row{
             .plan__p{
-                color: black;
+                color: white;
                 margin-bottom: 2.5rem;
                 font-size: 1.5rem;
                 font-weight: 700;
@@ -189,53 +279,26 @@ $weight: 100;
 .section__plan--fondo{
     background-image: url(../imagenes/fondo2.jpg);
     background-size: cover;
+    position: relative;
 }
-/*Contacto*/
+//Contacto//
 
-/*formulario*/
+//mapa//
 
-.section__contacto{
-    margin-left: 2rem;
-}
-.contacto__fieldset{
-    display: flex;
-    flex-direction: column;
-    legend{
-        font-size: 2.5rem;
+.ubicacion{
+    .iframe{
+        height: 100vh;
+        width: 100%;
     }
-    label{
-        font-size: 1.6rem;
+    .ubicacion__h2{
+        text-align: center;
+        padding: 1rem 0;
+        font-weight: 600;
+        font-size: 2.6rem;
     }
-    input{
-        font-size: 1.6rem;
-        margin: 1rem 0;
-    }
-    select{
-        font-size: 1.6rem;
-        margin: 1rem 0;
-    }
-    textarea{
-        height: 25rem;
-    }
-}
-.boton__limpiar, .boton__enviar{
-    background-color: $celeste;
-    color: white;
-}
-.boton__limpiar:hover, .boton__enviar:hover{
-    background-color: $celeste2;
-}
-#email{
-    margin-bottom: 0;
-}
-.check__container{
-    display: flex;
-}
-.form-text{
-    font-size: 1.1rem;
 }
 
-/*redes e informacion*/
+//redes e informacion//
 
 .informacion__div{
     display: flex;
@@ -278,24 +341,137 @@ $weight: 100;
         }
     }
 }
-/*mapa*/
+//formulario//
 
-.iframe{
-    height: 100vh;
-    width: 100%;
+
+.contacto__fieldset{
+    display: flex;
+    flex-direction: column;
+    legend{
+        font-size: 2.5rem;
+    }
+    label{
+        font-size: 1.6rem;
+    }
+    input{
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    }
+    select{
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    }
+    textarea{
+        height: 25rem;
+    }
 }
-.ubicacion__h2{
+.boton__limpiar, .boton__enviar{
+    background-color: $celeste;
+    color: white;
+}
+.boton__limpiar:hover, .boton__enviar:hover{
+    background-color: $celeste2;
+}
+#email{
+    margin-bottom: 0;
+}
+.check__container{
+    display: flex;
+}
+.form-text{
+    font-size: 1.1rem;
+}
+
+//nosotros.html//
+
+//sobre nosotros//
+
+.bienvenidos__p1{
+    margin-top: 5rem;
+}
+.bienvenidos__img--margin{
+    margin-top: 5rem;
+}
+
+//galeria//
+
+.themed-grid-col {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+.themed-container {
+    padding: .25rem;
+    margin-bottom: 5rem;
+}
+
+#nosotros{
+    background-color: white;
+}
+
+.nosotros__contenedor{
+    padding-bottom: 8rem;
+    .nosotros__h2{
+        text-align: center;
+        padding: 3rem 0;
+        font-weight: $weight*6;
+        font-size: 3.6rem;
+    }
+}
+
+//opiniones//
+
+.section__opiniones{
     text-align: center;
-    padding: 1rem 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 2.6rem;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    .container{
+        .row{
+            .opiniones__h2{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 4.6rem;
+                color: white;
+                .opiniones__h2--color{
+                    color: $celeste;
+                }
+            }
+            .opiniones__h3{
+                color: white;
+                margin: 0 auto;
+                margin-bottom: 5rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+.section__opiniones--fondo{
+    background-image: url(../imagenes/opiniones.jpg);
+    background-size: cover;
+    position: relative;
+}
+#carousel__nosotros{
+    max-width: 80rem;
+}
+.carousel-item{
+    .familia__span{
+        color: white;
+        font-size: 2rem;
+    }
+    .familia__div{
+        margin-top: 3rem;
+        .familia__span2{
+            color: white;
+            font-size: 2rem;
+        }
+    }
 }
 
-/*especialidades.html*/
+//especialidades.html//
 
 
-/*portada*/
+//portada//
 
 .especialistas__portada{
     height: 80vh;
@@ -303,31 +479,44 @@ $weight: 100;
     text-align: center;
     .portada__img{
         object-position: top;
+        filter: brightness(80%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(80%);
     }
 }
 
 .carousel-caption{
+    bottom: 30rem;
+    z-index: 10;
     .portada__h1{
         text-transform: uppercase;
         font-weight: $weight*6;
-        font-size: $ancho-fuente*1.4; //tamaño de 5.6rem//
-        color: black;
+        font-size: 4.5rem;
+        color: white;
     }
-        .portada__p{
+    .portada__p{
+        color: white;
         font-size: 2rem;
         font-weight: $weight*7;
+        .carousel__span--color{
+            color: $celeste;
+        }
     }
 }
 
-
-/*especialistas*/
+//especialistas//
 
 .section__especialidades{
     background-color: $azul-oscuro;
+    padding-bottom: 8rem;
     .especialidades__h2{
         text-align: center;
         padding: 3rem 0;
-        text-transform: uppercase;
         font-weight: $weight*6;
         font-size: 3.6rem;
         color: white;
@@ -337,6 +526,9 @@ $weight: 100;
 .especialidades{
     background-color: #008fe2;
     border: 4px solid black;
+    .especialidades__img{
+        margin-bottom: 1.5rem;
+    }
     .especialidades__div{
         display: flex;
         flex-direction: column;
@@ -346,11 +538,17 @@ $weight: 100;
             font-weight: bold;
             margin-left: 3rem;
         }
+        .especialidades__span--2{
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 3rem;
+        }
         .especialidades__p{
             color: white;
             margin: 2rem 3rem;
         }
-        .especialidades__span2{
+        .especialidades__span--3{
             color: white;
             font-size: 2rem;
             margin-left: 3rem;
@@ -368,32 +566,92 @@ $weight: 100;
     background-color: $azul-oscuro2;
 }
 
-/*nosotros.html*/
+//Centro Medico Varela en numeros//
 
-.nosotros{
-    display: grid;
-    grid-template-rows: 160px 1fr 100px;
-    grid-template-columns: 1fr;
-    margin-top: 8rem;
-    text-align: center;
-    .nosotros__h1{
-        padding: 20px 0;
-        font-size: 2.8rem;
+.numeros__section{
+    background-color: $celeste;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    background-image: url(../imagenes/fondonumeros.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .container{
+        height: 70%;
+        .numeros__h2{
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        .row{
+            .feature{
+                text-align: center;
+                margin-bottom: 5rem;
+                .feature-icon{
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 4rem;
+                    height: 4rem;
+                    margin-bottom: 1rem;
+                    font-size: 2rem;
+                    color: #fff;
+                    border-radius: .75rem;
+                    .numeros__img{
+                        max-width: 200%;
+                    }
+                }
+                .numeros__span{
+                    margin-top: 1rem;
+                    color: white;
+                    font-size: 6rem;
+                }
+                .numeros__p{
+                    color: white;
+                    font-size: 2rem;
+                }
+            }
+        }
     }
-    .nosotros__contenedor{
-        width: 100%;
-        max-width: 95%;
-        margin: 0 auto;
+}
+
+//Servicos Medicos//
+
+.medicos__section{
+    background-color: $azul-oscuro;
+    padding-bottom: 8rem;
+    .medicos__h2{
+        text-align: center;
+        padding: 3rem 0;
+        font-weight: $weight*6;
+        font-size: 3.6rem;
+        color: white;
+        
+    }
+    .container{
+        .row{
+            .col-md-6{
+                .especialidades{
+                    .especialidades__div{
+                        .medicos__span{
+                            color: white;
+                            font-size: 3rem;
+                            padding: 0 1.5rem;
+                            padding-top: 1.5rem;
+                        }
+                        .medicos__p{
+                            color: white;
+                            padding: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-.nosotros--fondo{
-    background-color: white;
-}
-.nosotros__p{
-    text-align: left;
-    padding-bottom: 20px;
-}
-/*planes.html*/
+
+//planes.html//
 
 .planes__span{
     color: $celeste;
@@ -406,8 +664,10 @@ $weight: 100;
     background-position: center;
 }
 
-/*beneficios*/
-
+//beneficios//
+#beneficios{
+    background-color: white;
+}
 .beneficios__h2{
     text-align: center;
     padding: 3rem 0;
@@ -435,19 +695,14 @@ $weight: 100;
     }
 }
 
-/*salud*/
+//salud//
 
 .salud__section{
-    background-color: $beige;
     .salud__h2{
         text-align: center;
         font-size: 3.6rem;
         margin: 5rem 0;
     }
-}
-
-.salud__contenedor{
-    padding-bottom: 10rem;
 }
 .salud{
     display: flex;
@@ -479,8 +734,9 @@ $weight: 100;
     }
     .salud__span2{
         color: white;
-        margin-bottom: 2rem;
         font-size: 1.8rem;
+        margin: 0 2rem;
+        margin-bottom: 2rem;
     }
     .boton__salud{
         margin: 2rem 0;
@@ -490,7 +746,7 @@ $weight: 100;
     }
     
 }
-/*turnos.html*/
+//turnos.html//
 
 #turnos{
     background-color: white;
@@ -503,15 +759,16 @@ $weight: 100;
             flex-direction: column;
             justify-content: center;
             .turnos__h1{
-                font-size: 5.6rem;
+                font-size: 4.2rem;
                 font-weight: bold;
                 text-transform: uppercase;
+                color: white;
                 .planes__span{
                     color: $celeste;
                 }
             }
             .turnos__p{
-                color: black;
+                color: white;
                 font-weight: bold;
             }
         }
@@ -551,4 +808,8 @@ $weight: 100;
 }
 .lh-condensed { 
     line-height: 1.25; 
+}
+
+.col-md-6, .mb-3{
+    padding-left: 0;
 }

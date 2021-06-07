@@ -7,7 +7,6 @@
     <meta name="description" content="En el Centro Medico Varela vas a poder sacar un turno facil, rapido y para el dia y horario que quieras. Ademas tendras la posibilidad de pagar ya sea via online o en efectivo.">
     <meta name="keywords"  content="MEDICOS, CONSULTORIO, CENTRO MEDICO, MEDICINA, DOCTOR, FLORENCIO VARELA, CONSULTORIOS MEDICOS, HOSPITAL, CLINICA, TURNOS, SACAR UN TURNO, PEDIR UN TURNO, ATENDERME CON UN MEDICO">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/prueba.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -29,20 +28,31 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navegacion__ul navbar-nav mr-auto">
                         <li class="navegacion__li1 nav-item active"><a class="navegacion__a" href="index.html">Inicio</a></li>
-                        <li class="navegacion__li2 nav-item"><a class="navegacion__a" href="especialidades.html">Especialidades</a></li>
-                        <li class="navegacion__li3 nav-item"><a class="navegacion__a" href="nosotros.html">Nosotros</a></li>
+                        <li class="navegacion__li2 nav-item"><a class="navegacion__a" href="nosotros.html">Nosotros</a></li>
+                        <li class="navegacion__li3 nav-item"><a class="navegacion__a" href="especialidades.html">Especialidades</a></li>
                         <li class="navegacion__li4 nav-item"><a class="navegacion__a" href="planes.html">Planes de Salud</a></li>
                         <li class="navegacion__li5 nav-item"><a class="navegacion__a" href="turnos.html">Pedir Turno</a></li>
                     </ul> 
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="boton--nav">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="boton__a" href="tel:11-3155-2746">11-3155-2746</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main id="turnos">
-        <section class="turnos__planes turnos--fondo">
-            <div class="turnos animate__animated animate__zoomIn">
-                <h1 class="turnos__h1">Pedir un <span class="planes__span">Turno</span></h1>
-                <p class="turnos__p">Completa el siguiente formulario para poder sacar un turno.</p>
+        <section class="carousel-inner">
+            <div class="carousel-item active especialistas__portada">
+                <img class="carousel__img portada__img" src="imagenes/turnos.jpg" alt="medico con fondo desenfocado">
+                <div class="container">
+                    <div class="carousel-caption animate__animated animate__zoomIn">
+                        <h1 class="portada__h1">Pedir un <span class="planes__span">Turno</span></h1>
+                        <p class="portada__p">Completa el siguiente formulario para poder sacar un turno.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="container section__form">
@@ -61,7 +71,7 @@
                         </li>
                     </ul>
                     <form class="p-2 turnos__form">
-                        <div class="input-group div__boton--tamaño">
+                        <div class="input-group">
                             <input type="text" class="form-control turnos__input" placeholder="Codigo de Promocion">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-secondary turnos__boton">Usar</button>
@@ -214,8 +224,8 @@
             <div class="row">
                 <div class="col-lg-5 col-xs-12 about-company">
                     <h2>Centro Medico <span class="footer__span">Varela</span></h2>
-                    <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-                    <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+                    <p class="pr-5 text-white-50">El mejor y mas completo Centro Medico en Florencio Varela</p>
+                    <p><a href="https://www.instagram.com/gerorajoy21/"><i class="fa fa-instagram mr-1"></i></a><a href="https://www.linkedin.com/in/geronimo-rajoy-gomez-5b61ba200"><i class="fa fa-linkedin-square"></i></a></p>
                 </div>
                 <div class="col-lg-3 col-xs-12 links">
                     <h4 class="mt-lg-0 mt-sm-3 footer__h4">Links</h4>
@@ -225,7 +235,6 @@
                         <li class="footer__li"><a href="especialidades.html">Especialidades</a></li>
                         <li class="footer__li"><a href="planes.html">Planes de Salud</a></li>
                         <li class="footer__li"><a href="turnos.html">Pedir un Turno</a></li>
-                        <li class="footer__li"><a href="sitemap.html">Mapa de Sitio</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-xs-12 location">
@@ -245,4 +254,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a42d5bf402.js" crossorigin="anonymous"></script>
 </body>
+</html>
